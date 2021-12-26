@@ -3,6 +3,7 @@
       const app = express();
       const axios = require ('axios');
       const {WebhookClient} = require('dialogflow-fulfillment');
+      const PORT = process.env.PORT || 3000;
 
       app.get('/', function (req, res) {
         res.send('PIZZARIA GUAJARÁ ONLINE');
@@ -61,8 +62,6 @@
         var total=agent.parameters.total;
         total=0;
         
-        
-    
     
         //Pizza 
        if (sabor === 'Calabresa'){ 
@@ -187,6 +186,6 @@
       */
 
         // listen for requests :)
-          app.listen(3000, () => {
-          console.log("executando na porta "+ 3000);
+          app.listen(PORT, () => {
+          console.log("executando na porta "+ PORT);
       });

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm start"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +14,8 @@
     "dialogflow-fulfillment": "^0.6.1",
     "express": "^4.17.2",
     "heroku": "^7.59.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
